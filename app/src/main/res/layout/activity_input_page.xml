@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.google.android.gms.location.sample.activityrecognition.InputPage">
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_below="@+id/editTextElCons"
+        android:layout_alignRight="@+id/textViewElCons"
+        android:layout_alignEnd="@+id/textViewElCons"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textViewSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Surname"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Weight"
+        android:layout_below="@+id/editTextSurname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewCarMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car make"
+        android:layout_below="@+id/editTextWeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/textViewElCons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El. consumption"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editTextCarMake"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_alignTop="@+id/textViewSurname"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextSurname"
+        android:layout_alignStart="@+id/editTextSurname"
+        android:layout_alignTop="@+id/textViewWeight"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextCarMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextWeight"
+        android:layout_alignRight="@+id/editTextWeight"
+        android:layout_alignTop="@+id/textViewCarMake"
+        android:ems="10"
+        android:hint="Car make"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextElCons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCarMake"
+        android:layout_alignStart="@+id/editTextCarMake"
+        android:layout_alignTop="@+id/textViewElCons"
+        android:ems="10"
+        android:hint="El. consumption"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAdd"
+        android:layout_centerHorizontal="true"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextElCons"
+        android:layout_alignRight="@+id/editTextElCons"
+        android:layout_alignTop="@+id/btnDelete"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnAdd"
+        android:text="View all" />
+
+    <Button
+        android:id="@+id/btnGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnUpdate"
+        android:layout_alignRight="@+id/btnUpdate"
+        android:layout_alignTop="@+id/btnViewAll"
+        android:text="Graph" />
+
+    <Button
+        android:id="@+id/btnDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnDelete"
+        android:layout_alignRight="@+id/btnDelete"
+        android:layout_alignTop="@+id/btnViewAll"
+        android:onClick="startDistance"
+        android:text="Distance" />
+
+</RelativeLayout>
